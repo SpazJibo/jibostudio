@@ -1,6 +1,9 @@
-# create-svelte
+# Jibo Studio Website 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+This repo contains all of the source code for the Jibo Studio website. This can
+be used as a reference for those that want to leverage sveltekit and tailwindcss 
+to create a similar website. Below is the rest of the typical steps to create
+and run a sveltekit site.
 
 ## Creating a project
 
