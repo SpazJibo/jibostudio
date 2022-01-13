@@ -6,12 +6,15 @@ const config = {
 	theme: {
         extend: {
             colors: {
-                'jibo-red': '#740024',
-                'jibo-gray': '#4D4D4D',
+                'jibo-red': '#520400',
+                'jibo-dark': '#404535',
+                'jibo-light': '#F6F4F5',
+                'jibo-purple-dark': '#5A189A',
+                'jibo-purple-light': '#E4D6FF'
             },
             container: {
                 center: true,
-            }
+            },
         }
 	},
 
