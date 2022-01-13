@@ -8,6 +8,9 @@ const config = {
             colors: {
                 'jibo-red': '#740024',
                 'jibo-gray': '#4D4D4D',
+            },
+            container: {
+                center: true,
             }
         }
 	},

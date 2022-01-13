@@ -2,19 +2,19 @@
 	import '../app.css';
 </script>
 
-<header class="bg-gray-300 text-jibo-red p-5">
-    <div class="container">
-        <h1 class="text-3xl font-bold ">
-            Jibo Stud<span class="text-jibo-gray">io</span>
-        </h1>
-    </div>
-</header>
-
-<div class="m-5">
-    <slot />
-</div>
-
-<div class="text-center absolute inset-x-0 bottom-0 h-16 bg-gray-300 
-    text-jibo-red p-5">
-    Copyright &copy; 2022 Jibo Studio LLC 
+<div class="flex flex-col bg-gray-300 h-screen justify-between">
+    <header class="bg-white p-4"> 
+           <h1 class="text-3xl font-bold">
+               <span class="text-jibo-red">
+                   &lt;Jibo Stud</span><span class="text-jibo-gray">
+                   io&nbsp;/&gt;
+               </span>           
+           </h1>
+    </header>
+    <main class="mb-auto p-4">
+        <slot />
+    </main> 
+    <footer class="text-center bg-gray-200 text-jibo-red p-4">
+        Copyright &copy; 2022 Jibo Studio LLC 
+    </footer>
 </div>
