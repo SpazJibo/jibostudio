@@ -5,7 +5,7 @@
 
 <div
 	class="flex flex-col bg-gradient-to-b from-jibo-purple-dark to-jibo-red 
-    h-screen "
+    h-screen"
 >
 	<Nav />
 	<main class="mb-auto p-4">

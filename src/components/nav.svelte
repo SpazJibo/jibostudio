@@ -1,45 +1,78 @@
-<nav class="flex items-center justify-between bg-jibo-light p-4">
-	<div class="text-3xl font-bold">
-		<span class="text-jibo-purple-dark"> &lt;Jibo Stud</span><span class="text-jibo-red">
-			io&nbsp;/&gt;
-		</span>
-	</div>
-	<div class="block lg:hidden md:hidden">
-		<button
-			class="flex items-center px-3 py-2 border rounded text-jibo-purple-dark border-jibo-purple-dark hover:text-white hover:border-white"
-		>
-			<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-				><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg
-			>
-		</button>
-	</div>
-	<div
-		class="w-full block flex-grow md:flex lg:flex md:items-center lg:items-center md:w-auto lg:w-auto"
-	>
-		<div class="text-sm md:flex-grow lg:flex-grow">
-			<ul class="flex lg:flex-grow md:flex-grow text-jibo-purple-dark font-bold">
-				<li>
-					<a
-						class="mt-4 md:inline-block lg:inline-block md:mt-0 lg:mt-0 text-jibo-purple-dark font-bold hover:text-jibo-red mr-4"
-						href="/"
-						alt="Home">Home</a
-					>
-				</li>
-				<li>
-					<a
-						class="mt-4 md:inline-block lg:inline-block md:mt-0 lg:mt-0 text-jibo-purple-dark font-bold hover:text-jibo-red mr-4"
-						href="/about"
-						alt="About">About</a
-					>
-				</li>
-				<li>
-					<a
-						class="mt-4 md:inline-block lg:inline-block md:mt-0 lg:mt-0 text-jibo-purple-dark font-bold hover:text-jibo-purple-light mr-4"
-						href="/contact"
-						alt="Contact">Contact</a
-					>
-				</li>
-			</ul>
-		</div>
-	</div>
+<script type="javascript">
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        const btn = document.querySelector('button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    });
+</script>
+
+<nav class="bg-jibo-light">
+    <div class="class=max-w-xl mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center text-2xl font-bold m-3">
+                <span class="text-jibo-purple-dark"> &lt;Jibo Stud</span><span
+                    class="text-jibo-red">
+                    io&nbsp;/&gt;
+                </span>
+            </div>
+
+            <div class="hidden md:block flex items-center space-x-3 m-3">
+                <a
+                    class="text-jibo-purple-dark font-bold hover:text-jibo-purple-light"
+                    href="/"
+                    alt="Home">Home</a>
+                <a
+                    class="text-jibo-purple-dark font-bold hover:text-jibo-purple-light"
+                    href="/about"
+                    alt="About">About</a>
+                <a
+                    class="text-jibo-purple-dark font-bold hover:text-jibo-purple-light"
+                    href="/contact"
+                    alt="Contact">Contact</a>
+            </div>
+
+            <div class="md:hidden flex items-center space-x-3 m-3">
+                <button>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu hidden md:hidden">
+            <a
+                href="/"
+                alt="Home"
+                class="block py-2 px-4 text-sm text-jibo-purple-dark font-bold hover:bg-gray-200">
+                Home
+            </a>
+            <a
+                href="/about"
+                alt="About"
+                class="block py-2 px-4 text-sm text-jibo-purple-dark font-bold hover:bg-gray-200">
+                About
+            </a>
+            <a
+                href="/contact"
+                alt="Contact"
+                class="block py-2 px-4 text-sm text-jibo-purple-dark font-bold hover:bg-gray-200">
+                Contact
+            </a>
+        </div>
+    </div>
 </nav>
